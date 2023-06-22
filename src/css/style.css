@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* border: none; */
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgba(231, 27, 27, 0.836);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 470px;
+    height: 550px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+.box.show{
+    background-image: url(../img/IMG-20230618-WA0015.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#us{
+    display: none;
+}
+.box > h1{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.box > h1 > span{
+    display: none;
+}
+.box > img{
+    width: 450px;
+    margin-top: 115px;
+
+}
+.box-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+.btn{
+    width: 65px;
+    height: 45px;
+    border: 1px solid white;
+    background-color: rgba(231, 27, 27, 0.836);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+a{
+    color: white;
+}
+.btn:hover {
+    transform: scaleY(45deg);
+}
+#rght{
+    margin-right: 100px;
+}
+#nn{
+    position: absolute;
+    margin-left: 100px;
+    transition: ease-in-out 0.2s;
+}
+
+/* responsive */
+@media (max-width: 390px){
+    .box{
+        width: 290px;
+        height: 500px;
+        padding: 0;
+    }
+    .box > h1 > span{
+        display: inline;
+    }
+    .box > h4{
+        display: none;
+        border-radius: 15px;
+    }
+    .box > img{
+        width: 290px;
+        margin-top: 50px;
+    }
+}

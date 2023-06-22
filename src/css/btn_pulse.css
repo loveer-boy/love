@@ -1,0 +1,42 @@
+@-webkit-keyframes btn-pulsando {
+    to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    }
+}
+
+    @keyframes btn-pulsando {
+    to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    color:#ffffff;
+    }
+}
+
+    .btn-pulsando {
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+
+    }
+
+    .btn-pulsando {
+
+    -webkit-animation-name: btn-pulsando;
+    animation-name: btn-pulsando;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+}
