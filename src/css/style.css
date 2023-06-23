@@ -76,6 +76,7 @@ a{
 #nn{
     position: absolute;
     margin-left: 100px;
+    transition: ease-in-out 0.2s;
 }
 
 /* responsive */
