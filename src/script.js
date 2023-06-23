@@ -21,6 +21,14 @@ function run() {
     btnSim.classList.add('btn-pulsando')
 }
 
+function pulse(){
+    btnSim.classList.add('btn-pulsando')
+    btnSim.addEventListener('mouseleave', stopPulse)
+    function stopPulse(){
+        btnSim.classList.remove('btn-pulsando')
+    }
+}
+
 btnSim.addEventListener('click', yess)
 function yess(){
     bg.innerHTML = ""
